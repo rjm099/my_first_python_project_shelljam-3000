@@ -1,8 +1,10 @@
-# ShellJAM 3000 - Main Hub
-import start
+import datetime
+
+def run_clock():
+    current_time = datetime.datetime.now()
+    clock_display = current_time.strftime("%I:%M %p")
+    print(f"COMPOWDER SYSTEM ONLINE. Local Time: {clock_display}")
 
 if __name__ == "__main__":
-    print("Initializing ShellJAM 3000 core processes...")
-    # This will run your start script from inside main.py
-    start.run_clock()
+    run_clock()
 
